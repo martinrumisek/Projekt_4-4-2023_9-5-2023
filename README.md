@@ -4,6 +4,7 @@
 # Školní projekt OAUH 2023 - GUI JAVA
 ### Zadání k projektu:
 Projekt bude tvořen v Intellij Idea. Aplikace bude zobrazovat seznam žáku. Na každého žáka budou zobrazeny informace, které budou načteny do databáze. Hlavním tématem tohohle projektu bude, naučit se pracovat s databází. Mělo by být umožněno přidávání žáku, editace současných dat, zobrazení a také smazání dat. Data budou zobrazeny v tabulce.
+
 **Přidání dat:**
 
 - Bude umožněno přidání nového žáka, pomocí formuláře, do kterého uživatel vyplní všechny možné informace, např. jméno, příjmení, telefonní číslo, email, bydliště atd.
