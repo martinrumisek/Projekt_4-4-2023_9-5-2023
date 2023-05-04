@@ -7,5 +7,18 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Programovani/A_plugin_JAVA/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar!/" />
+          <root url="jar://$USER_HOME$/Programovani/A_plugin_JAVA/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47.jar!/" />
+          <root url="jar://$USER_HOME$/Programovani/A_plugin_JAVA/rs2xml (1).jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Programovani/A_plugin_JAVA/rs2xml (1).jar!/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
