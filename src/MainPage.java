@@ -263,10 +263,10 @@ public class MainPage extends JFrame {
             con = DriverManager.getConnection("jdbc:mysql://localhost/projektjava","root","");
             System.out.println("připojeno k databází funguje!");
         }catch (ClassNotFoundException ex){
-            ex.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
         catch (SQLException ex){
-            ex.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
     }
     public void savaData(){
@@ -315,7 +315,7 @@ public class MainPage extends JFrame {
 
 
                 }catch (SQLException e1){
-                    e1.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Problém s databází!");
                 }
     }
     // udělat rozdělanou zkoušku..
@@ -341,7 +341,7 @@ public class MainPage extends JFrame {
                 txtAreaNote.setText(text);
             }
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
         try{
             pstPoznamky = con.prepareStatement("select text from poznamky where id = 1");
@@ -352,7 +352,7 @@ public class MainPage extends JFrame {
                 textAreaNote.setText(text);
             }
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
     }
     public void viewDataTable(){
@@ -364,7 +364,7 @@ public class MainPage extends JFrame {
             tableZaci.setModel(DbUtils.resultSetToTableModel(rs));
 
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
         tableZaciMain.setEnabled(false);
         try{
@@ -373,7 +373,7 @@ public class MainPage extends JFrame {
             tableZaciMain.setModel(DbUtils.resultSetToTableModel(rsMain));
 
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
 
     }
@@ -384,7 +384,7 @@ public class MainPage extends JFrame {
             tableClass1.setModel(DbUtils.resultSetToTableModel(rsOne));
 
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
         try{
             pstHodnoceni = con.prepareStatement("select * from hodnoceni_zaci where class = '1.A'");
@@ -392,14 +392,14 @@ public class MainPage extends JFrame {
             tableClass1Main.setModel(DbUtils.resultSetToTableModel(rsOneMain));
             tableClass1Main.setEnabled(false);
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
         try{
             pstHodnoceni = con.prepareStatement("select * from hodnoceni_zaci where class = '2.A'");
             ResultSet rsTwo = pstHodnoceni.executeQuery();
             tableClass2.setModel(DbUtils.resultSetToTableModel(rsTwo));
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
         try{
             pstHodnoceni = con.prepareStatement("select * from hodnoceni_zaci where class = '2.A'");
@@ -407,7 +407,7 @@ public class MainPage extends JFrame {
             tableClass2Main.setModel(DbUtils.resultSetToTableModel(rsTwoMain));
             tableClass2Main.setEnabled(false);
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
 
         try{
@@ -415,7 +415,7 @@ public class MainPage extends JFrame {
             ResultSet rsThree = pstHodnoceni.executeQuery();
             tableClass3.setModel(DbUtils.resultSetToTableModel(rsThree));
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
         try{
             pstHodnoceni = con.prepareStatement("select * from hodnoceni_zaci where class = '3.A'");
@@ -423,14 +423,14 @@ public class MainPage extends JFrame {
             tableClass3Main.setModel(DbUtils.resultSetToTableModel(rsThreeMain));
             tableClass3Main.setEnabled(false);
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
         try{
             pstHodnoceni = con.prepareStatement("select * from hodnoceni_zaci where class = '4.A'");
             ResultSet rsFour = pstHodnoceni.executeQuery();
             tableClass4.setModel(DbUtils.resultSetToTableModel(rsFour));
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
         try{
             pstHodnoceni = con.prepareStatement("select * from hodnoceni_zaci where class = '4.A'");
@@ -438,7 +438,7 @@ public class MainPage extends JFrame {
             tableClass4Main.setModel(DbUtils.resultSetToTableModel(rsFourMain));
             tableClass4Main.setEnabled(false);
         }catch (SQLException eTable){
-            eTable.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
 
     }
@@ -510,7 +510,7 @@ public class MainPage extends JFrame {
                 }
             }
         }catch (SQLException e){
-
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
     }
     public void repairDataForm(){
@@ -548,7 +548,7 @@ public class MainPage extends JFrame {
             tab3.setVisible(false);
             tab2.setVisible(true);
         }catch (SQLException e1){
-
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
     }
     public void repairNote(){
@@ -558,7 +558,7 @@ public class MainPage extends JFrame {
             pstPoznamky.setString(1, text);
             pstPoznamky.executeUpdate();
         }catch (SQLException e){
-
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
     }
     public void deleteData(){
@@ -584,7 +584,7 @@ public class MainPage extends JFrame {
             tab2.setVisible(true);
 
         }catch (SQLException e){
-
+            JOptionPane.showMessageDialog(null, "Problém s databází!");
         }
     }
     public void saveDataHodnoceni(){
@@ -1109,7 +1109,7 @@ public class MainPage extends JFrame {
                 pstHodnoceni.setString(15, id);
                 pstHodnoceni.executeUpdate();
             }
-            }catch (SQLException e){}
+            }catch (SQLException e){ JOptionPane.showMessageDialog(null, "Problém s databází!");}
         }
         if (panelClass2.isVisible() == true){
             try{for (int i=0;i<tableClass2.getRowCount(); i++) {
@@ -1631,7 +1631,7 @@ public class MainPage extends JFrame {
                 pstHodnoceni.setString(15, id);
                 pstHodnoceni.executeUpdate();
             }
-            }catch (SQLException e){}
+            }catch (SQLException e){ JOptionPane.showMessageDialog(null, "Problém s databází!");}
         }
         if (panelClass3.isVisible() == true){
             try{for (int i=0;i<tableClass3.getRowCount(); i++) {
@@ -2153,7 +2153,7 @@ public class MainPage extends JFrame {
                 pstHodnoceni.setString(15, id);
                 pstHodnoceni.executeUpdate();
             }
-            }catch (SQLException e){}
+            }catch (SQLException e){ JOptionPane.showMessageDialog(null, "Problém s databází!");}
         }
         if (panelClass4.isVisible() == true){
             try{for (int i=0;i<tableClass4.getRowCount(); i++) {
@@ -2675,7 +2675,7 @@ public class MainPage extends JFrame {
                 pstHodnoceni.setString(15, id);
                 pstHodnoceni.executeUpdate();
             }
-            }catch (SQLException e){}
+            }catch (SQLException e){ JOptionPane.showMessageDialog(null, "Problém s databází!");}
         }
     }
     public static void main(String[] args) {
@@ -2692,4 +2692,3 @@ public class MainPage extends JFrame {
         // TODO: place custom component creation code here
     }
 }
-//Dodělat  vyjímky...
