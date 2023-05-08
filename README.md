@@ -21,5 +21,31 @@ Projekt bude tvořen v Intellij Idea. Aplikace bude zobrazovat seznam žáku. Na
 
 - Uživatel bude moci data také odstranit, aby se odstranili s databáze a nebyli již zobrazovány.
 
+## Jak by měl projekt vypadat?
+- Aplikace je rozdělena na boční menu se středovým obsahem. Nahoře je vlastní lišta pro minimalizování okna + zavření okna (ukončení aplikace).
+- Při spuštění aplikace, by se nám měl zobrazit souhrn výpisu z adresáře + hodnocení žáků + vlastních poznámek.
+- Boční menu nám bude sloužit pro výběr dané kategorie, které chceme upravovat.
+
+### Úvodní stránka
+- Souhrn všech výpisů, které jsou v aplikaci možné. Je to možnost vidět všechno pohromadě.
+
+### Seznam žáků
+- Tahle sekce by měla zobrazovat takový menší adresář, do kterého bychom měli zapisovat žáky.
+- Zde je možnost přidávání
+- Vyhledání žáka
+- Pokud žáka vyhledáme, tak můžeme upravit informace o žákovi, nebo také žáka odstranit.
+
+### Hodnocení
+- Hodnocení je rozdělené podle tříd, takže žáky máme rozdělené.
+- Jsou vyobrazeny v tabulce. Z adresáře jsou zapsány údaje: (jméno a příjmení + třída).
+- Do prázdných buňek máme možnost zapisovat známky ve stupnici (1, 1-, 2, 2-, 3, 3-, 4, 4-, 5). Pokud bychom dodrželi tohle pravidlo, tak se nám vždy u žáka spočítá průměr jeho známek. Největší váhu známky má test, dále ústní zkoušení, menší váhu aktivita + bonus.
+
+### Poznámky
+- Zde si můžeme vypsat libovolný text, který si můžeme uložit.
+
+## Nápověda pro aplikaci
+
+![img_1.png](img_1.png)
+
 ######  Zadání k projektu je v rozpracované verzi
-###### poslední úprava: 24.4.2023
+###### poslední úprava: 8.5.2023
