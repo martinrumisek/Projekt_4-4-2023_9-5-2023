@@ -218,7 +218,7 @@ public class MainPage extends JFrame {
             }
         });
         checkBoxRepairNote.addActionListener(e-> checkBtn());
-        btnNapoveda.addActionListener(new ActionListener() {
+        /*btnNapoveda.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 tab1.setVisible(false);
@@ -228,7 +228,7 @@ public class MainPage extends JFrame {
                 tab5.setVisible(false);
                 tab6.setVisible(true);
             }
-        });
+        });*/
     }
     public void checkBtn(){
         if (checkBoxRepairNote.isSelected()){
