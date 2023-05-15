@@ -31,7 +31,7 @@
             <properties>
               <font size="36" style="1"/>
               <foreground color="-1"/>
-              <text value="Název?"/>
+              <text value="Žáci"/>
             </properties>
           </component>
           <component id="67216" class="javax.swing.JButton" binding="btnMain">
@@ -209,7 +209,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="9e150" binding="tab3" layout-manager="GridLayoutManager" row-count="11" column-count="12" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="9e150" binding="tab3" layout-manager="GridLayoutManager" row-count="12" column-count="12" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -221,7 +221,7 @@
                 <children>
                   <vspacer id="79807">
                     <constraints>
-                      <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                     </constraints>
                   </vspacer>
                   <component id="62053" class="javax.swing.JLabel">
@@ -329,7 +329,7 @@
                   </hspacer>
                   <component id="1c7e6" class="javax.swing.JButton" binding="btnSave">
                     <constraints>
-                      <grid row="8" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="9" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="Uložit"/>
@@ -337,7 +337,7 @@
                   </component>
                   <component id="9a4c2" class="javax.swing.JButton" binding="btnDeleteForm">
                     <constraints>
-                      <grid row="8" column="3" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="9" column="3" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="Vymazat obsah"/>
@@ -362,7 +362,7 @@
                   </component>
                   <component id="ec496" class="javax.swing.JButton" binding="btnDeleteData">
                     <constraints>
-                      <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="Vymazat"/>
@@ -370,12 +370,12 @@
                   </component>
                   <hspacer id="f56d9">
                     <constraints>
-                      <grid row="9" column="3" row-span="1" col-span="5" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="10" column="3" row-span="1" col-span="5" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                   </hspacer>
                   <component id="79bcc" class="javax.swing.JButton" binding="btnRepairData">
                     <constraints>
-                      <grid row="8" column="8" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="9" column="8" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="Upravit"/>
@@ -383,7 +383,7 @@
                   </component>
                   <hspacer id="4d682">
                     <constraints>
-                      <grid row="9" column="8" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="10" column="8" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                   </hspacer>
                   <vspacer id="f0026">
@@ -408,6 +408,15 @@
                     <properties>
                       <editable value="false"/>
                       <enabled value="true"/>
+                    </properties>
+                  </component>
+                  <component id="e3a28" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="8" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <foreground color="-16777216"/>
+                      <text value="Vyplňte všechny políčka!!!"/>
                     </properties>
                   </component>
                 </children>
@@ -438,7 +447,13 @@
                     <children>
                       <component id="6f703" class="javax.swing.JTextArea" binding="txtAreaNote">
                         <constraints/>
-                        <properties/>
+                        <properties>
+                          <disabledTextColor color="-16777216"/>
+                          <enabled value="true"/>
+                          <selectedTextColor color="-16777216"/>
+                          <selectionColor color="-16777216"/>
+                          <wrapStyleWord value="true"/>
+                        </properties>
                       </component>
                     </children>
                   </scrollpane>
@@ -465,7 +480,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="99b30" binding="tab5" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="99b30" binding="tab5" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -475,7 +490,7 @@
                 <children>
                   <tabbedpane id="5a345" binding="tabbedPaneClass">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
                         <preferred-size width="200" height="200"/>
                       </grid>
                     </constraints>
@@ -578,10 +593,19 @@
                   </tabbedpane>
                   <component id="7f201" class="javax.swing.JButton" binding="btnSaveHodnoceni">
                     <constraints>
-                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="Uložit"/>
+                    </properties>
+                  </component>
+                  <component id="caa0d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font size="8"/>
+                      <text value="Známky mají váhu: Test = váha 5, zkoušení = váha 4, aktivita = váha 2, bonus = váha 1.&#10;Známky zapistujte ve tvaru (1, 1-, 2, 2-,3, 3-, 4, 4-, 5), pokud bude jiný tvar, nebude se počítat průměr."/>
                     </properties>
                   </component>
                 </children>
@@ -771,6 +795,7 @@
                             <constraints/>
                             <properties>
                               <background color="-1"/>
+                              <disabledTextColor color="-16777216"/>
                               <font size="12"/>
                               <foreground color="-16777216"/>
                             </properties>
@@ -795,15 +820,7 @@
                     </constraints>
                     <properties/>
                     <border type="none"/>
-                    <children>
-                      <component id="c5b6c" class="javax.swing.JLabel">
-                        <constraints/>
-                        <properties>
-                          <icon value="toolbarButtonGraphics/general/About16.gif"/>
-                          <text value="Label"/>
-                        </properties>
-                      </component>
-                    </children>
+                    <children/>
                   </scrollpane>
                   <hspacer id="f32bc">
                     <constraints>
