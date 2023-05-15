@@ -55,28 +55,28 @@ Projekt bude tvořen v Intellij Idea. Aplikace bude zobrazovat seznam žáku. Na
 1. Je potřeba spustit aplikaci XAMPP, kvůli funkčnosti databáze.
 ![img.png](img/img.png)
 2. Dále si najděte v mém git repozitáři databázi
-![img.png](img/img.png)
-![img_1.png](img/img_1.png)
+![img.png](img.png)
+![img_1.png](img_1_01.png)
 - Otevřete si daný soubor, a celý si ho zkopírujte.
 3. Pokud máte spuštěný XAMPP, jak je uvedeno na obrázku, tak do prohlížeče zadejte:
 - localhost/phpmyadmin
 - Měla by se vám otevřít databáze phpMyAdmin
-![img_3.png](img/img_3.png)
+![img_3.png](img_3_03.png)
 - Kliknete na políčko SQL, jak je uvedeno na obrázku.
 - Vložíte daný zkopírovaný kód a databázi přidáte, jak je uvedeno na obrázku pod textem.
-![img_4.png](img/img_4.png)
+![img_4.png](img_4_04.png)
 
 - Pokud jste postupovali podle návodu, tak by vám databáze již měla fungovat.
 
 ### Aplikace nejde spustit?
 - Pokud aplikace nejde spustit a bude vám vyskakovat tohle vyskakovací okno, co je uvedeno pod textem, tak čtěte dál a pokračujte podle uvedených pokynů.
 
-![img_5.png](img/img_5.png)
+![img_5.png](img_5_05.png)
 - Vše je v pořádku, jenom je potřeba nainstalovat potřebný balíček verze pro javu.
 - Zde je potřebný odkaz, kde naleznete ke stažení potřebný balíček:
   https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html
 - Je potřeba nainstalovat balíček, který je uvedený pod daným textem a aplikace bude již plně funkční...
-![img_6.png](img/img_6.png)
+![img_6.png](img_6_06.png)
 - Pokud si danou verzi Javy nainstalujete, tak aplikace by měla běžet.
 
 ######  Zadání k projektu je v rozpracované verzi
