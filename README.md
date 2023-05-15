@@ -64,7 +64,7 @@ Projekt bude tvořen v Intellij Idea. Aplikace bude zobrazovat seznam žáku. Na
 
 ## Jak zprovoznit databázi?
 1. Je potřeba spustit aplikaci XAMPP, kvůli funkčnosti databáze.
-![img.png](img/img.png)
+![img.png](img.png)
 2. Dále si najděte v mém git repozitáři databázi
 ![img.png](img/img0_00.png)
 ![img_1.png](img/img_1_01.png)
