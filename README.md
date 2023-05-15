@@ -1,5 +1,6 @@
 ##### Projekt do: 9.5.2023
 ###### Autor: Martin Rumíšek
+###### pracováno na Intellij Idea verze JDK 18
 
 # Školní projekt OAUH 2023 - GUI JAVA
 ### Zadání k projektu:
@@ -48,6 +49,14 @@ Projekt bude tvořen v Intellij Idea. Aplikace bude zobrazovat seznam žáku. Na
 ![img_1.png](img/img_1.png)
 
 - Pokud z daného návodu by nebylo něco jasné, tak se můžete podívat do dokumentace, která je přiložena v git repozitáři ve složce dokumentace.
+
+#### Knihovny:
+
+- mysql-connector-java-5.1.47.jar
+- mysql-connector-java-5.1.47.bin.jar
+- rs2xml.jar
+
+- Knihovny daný projekt již obsahuje.
 
 # Jak spustit Aplikaci
 - Aplikace je tvořena z hlavní aplikace + s databáze. 
